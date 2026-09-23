@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h2 class="app-title"><i class="fa-solid fa-cloud-sun"></i> Info Cuaca</h2>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Masukkan nama kota...">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Area ini yang akan muncul setelah pencarian berhasil -->
+        <div class="weather-info" id="weather-info">
+            <img src="" alt="ikon cuaca" id="weather-icon" class="weather-icon">
+            <h2 id="city-name">Nama Kota</h2>
+            <h1 id="temperature">0°C</h1>
+            <p id="description">Deskripsi Cuaca</p>
+            
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p id="humidity">0%</p>
+                        <p>Kelembapan</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p id="wind-speed">0 km/j</p>
+                        <p>Angin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="error-message" class="error-message">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p id="error-text">Kota tidak ditemukan!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
